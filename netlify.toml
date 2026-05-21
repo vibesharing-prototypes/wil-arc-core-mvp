@@ -1,0 +1,10 @@
+# Used when this folder is the Netlify site root (monorepo: set Base directory to custom-attributes-mvp).
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Client-side routing (same intent as vercel.json rewrites).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
